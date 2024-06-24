@@ -1,0 +1,52 @@
+# Ignore Maven target directory
+target/
+
+# Ignore Gradle build directory
+build/
+
+# Ignore temporary files
+*.tmp
+*.log
+*.out
+
+# Ignore IntelliJ IDEA project files
+/.idea/
+/*.iml
+
+# Ignore Eclipse project files
+/.classpath
+/.project
+/.settings/
+
+# Ignore NetBeans project files
+/nbproject/private/
+/build/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore log files
+*.log
+
+# Ignore OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Ignore JAR files
+*.jar
+*.war
+*.ear
+
+# Ignore application configuration files
+application*.yml
+application*.yaml
+application*.properties
+
+*.mvnw
+*.mvnw.cmd
