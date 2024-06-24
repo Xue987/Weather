@@ -8,6 +8,7 @@ This project is a Spring Boot based microservice application. It includes multip
 2. [Requirements](#requirements)
 3. [Setup and Installation](#setup-and-installation)
 4. [Running the Application](#running-the-application)
+5. [Test](#Test)
 
 
 ## Modules
@@ -88,4 +89,12 @@ Start the services in the following order:
         cd security
         mvn spring-boot:run
         ```
+
+## Test
+**Security Service**:
+    1. Test the public endpoint:GET http://localhost:8400/api/public
+    2. Obtain a JWT token:POST http://localhost:8400/auth/login -H "Content-Type: application/json" -d '{"username":"user","password":"password"}'
+    3. Use the user JWT token to access the user endpoint:GET http://localhost:8400/api/user -H "Authorization: Bearer <your_jwt_token>"
+    4. Use the admin JWT token to access the admin endpoint:GET http://localhost:8400/api/admin -H "Authorization: Bearer <your_jwt_token>"
+    5. Cannot get access to admin/user endpoint with user/admin jwt token
 

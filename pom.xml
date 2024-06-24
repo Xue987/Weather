@@ -17,6 +17,8 @@
         <module>config</module>
         <module>university</module>
         <module>library</module>
+        <module>security</module>
+        <module>security</module>
     </modules>
 
     <groupId>com.example</groupId>
